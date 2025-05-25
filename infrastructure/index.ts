@@ -4,7 +4,7 @@ import * as containerregistry from '@pulumi/azure-native/containerregistry'
 import * as dockerBuild from '@pulumi/docker-build'
 // Other imports at the top of the module
 import * as containerinstance from '@pulumi/azure-native/containerinstance'
-import * as cache from '@pulumi/azure-native/cache'
+import * as cache from '@pulumi/azure-native/redis'
 // Import the configuration settings for the current stack.
 const config = new pulumi.Config()
 const appPath = config.require('appPath')
